@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 23/05/2013 15:10:10
+EESchema Schematic File Version 2  date 24/05/2013 14:40:27
 LIBS:opto
 LIBS:power
 LIBS:conn
@@ -13,7 +13,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 8
 Title "Guepard PCB for FreeEMS"
-Date "23 may 2013"
+Date "24 may 2013"
 Rev "0.1-alpha"
 Comp ""
 Comment1 ""
@@ -21,66 +21,60 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 4650 5950 0    40   ~ 0
-Sensor Ground
-Connection ~ 4800 6150
+Text GLabel 5550 4450 0    40   Input ~ 0
+Injector-GND
+Text HLabel 9300 6550 2    40   Input ~ 0
+RPM0-IN-GND
+Text GLabel 9300 6550 0    40   Input ~ 0
+RPM-Crank-IN-GND
+Text GLabel 5550 5550 0    40   Input ~ 0
+RPM-Crank-IN-GND
 Wire Wire Line
-	4800 5950 4800 6350
-Wire Wire Line
-	4800 5950 5550 5950
-Connection ~ 7500 5000
-Wire Wire Line
-	7500 4900 7500 5100
-Wire Wire Line
-	5550 5050 5150 5050
-Wire Wire Line
-	5150 5050 5150 4650
-Wire Wire Line
-	4950 4900 4950 4850
-Wire Wire Line
-	4950 4850 5550 4850
-Connection ~ 7400 5650
-Wire Wire Line
-	7400 5550 7400 5750
-Wire Wire Line
-	7400 5750 7500 5750
-Connection ~ 9050 1500
-Connection ~ 9050 2200
-Connection ~ 8550 2200
-Wire Wire Line
-	9050 2200 8550 2200
-Wire Wire Line
-	8550 2200 8550 1500
-Wire Wire Line
-	8550 1500 9050 1500
-Wire Notes Line
-	550  2050 4200 2050
-Wire Notes Line
-	550  1050 4200 1050
-Wire Notes Line
-	4200 550  550  550 
-Wire Notes Line
-	4200 550  4200 7750
-Wire Notes Line
-	4200 7750 550  7750
-Wire Notes Line
-	550  7750 550  550 
-Wire Notes Line
-	550  2450 4200 2450
-Wire Wire Line
-	7250 5550 7500 5550
-Connection ~ 7400 5550
-Wire Wire Line
-	7250 5700 7250 5650
-Wire Wire Line
-	7250 5650 7500 5650
-Wire Wire Line
-	5150 4650 5550 4650
-Connection ~ 5150 4850
+	5550 6350 4800 6350
 Wire Wire Line
 	4800 6150 5550 6150
+Connection ~ 5150 4850
 Wire Wire Line
-	4800 6350 5550 6350
+	5550 4650 5150 4650
+Wire Wire Line
+	7500 5650 7250 5650
+Wire Wire Line
+	7250 5650 7250 5700
+Connection ~ 7400 5550
+Wire Wire Line
+	7250 5550 7500 5550
+Wire Wire Line
+	9050 1500 8550 1500
+Wire Wire Line
+	8550 1500 8550 2200
+Wire Wire Line
+	8550 2200 9050 2200
+Connection ~ 8550 2200
+Connection ~ 9050 2200
+Connection ~ 9050 1500
+Wire Wire Line
+	7500 5750 7400 5750
+Wire Wire Line
+	7400 5750 7400 5550
+Connection ~ 7400 5650
+Wire Wire Line
+	5550 4850 4950 4850
+Wire Wire Line
+	4950 4850 4950 4900
+Wire Wire Line
+	5150 4650 5150 5050
+Wire Wire Line
+	5150 5050 5550 5050
+Wire Wire Line
+	7500 4900 7500 5100
+Connection ~ 7500 5000
+Wire Wire Line
+	5550 5950 4800 5950
+Wire Wire Line
+	4800 5950 4800 6350
+Connection ~ 4800 6150
+Text Notes 4650 5950 0    40   ~ 0
+Sensor Ground
 Text GLabel 7500 5000 0    40   Input ~ 0
 Output-Ground
 Text HLabel 9050 3050 2    40   Input ~ 0
@@ -88,10 +82,10 @@ Output-Ground
 Text GLabel 9050 3050 0    40   Input ~ 0
 Output-Ground
 $Comp
-L GND #PWR01
+L GND #PWR1
 U 1 1 519E0B3D
 P 4950 4900
-F 0 "#PWR01" H 4950 4900 30  0001 C CNN
+F 0 "#PWR1" H 4950 4900 30  0001 C CNN
 F 1 "GND" H 4950 4830 30  0001 C CNN
 	1    4950 4900
 	1    0    0    -1  
@@ -166,10 +160,10 @@ Ignitor1
 Text GLabel 8550 2200 0    40   Input ~ 0
 +12V-ACC
 $Comp
-L GND #PWR02
+L GND #PWR2
 U 1 1 519E06BD
 P 7250 5700
-F 0 "#PWR02" H 7250 5700 30  0001 C CNN
+F 0 "#PWR2" H 7250 5700 30  0001 C CNN
 F 1 "GND" H 7250 5630 30  0001 C CNN
 	1    7250 5700
 	1    0    0    -1  
@@ -215,7 +209,7 @@ F0 "Digital-Inputs" 60
 F1 "Digital-Inputs.sch" 60
 $EndSheet
 Text GLabel 5550 6550 0    40   Input ~ 0
-MAT-Sensor
+SPR-Sensor
 Text GLabel 5550 5450 0    40   Input ~ 0
 RPM-Crank-IN-
 Text GLabel 5550 5650 0    40   Input ~ 0
@@ -245,16 +239,16 @@ TPS-5v
 Text GLabel 9300 5350 0    40   Input ~ 0
 Coolant-Sensor
 Text GLabel 9300 5250 0    40   Input ~ 0
-MAT-Sensor
+SPR-Sensor
 Text GLabel 9300 5150 0    40   Input ~ 0
 IAT-Sensor
 Text HLabel 10650 2700 0    40   Input ~ 0
 Spare-LSD-4
 Text HLabel 10650 2800 0    40   Input ~ 0
 Spare-LSD-3
-Text HLabel 6900 2350 0    40   Input ~ 0
+Text HLabel 3200 2550 0    40   Input ~ 0
 PA7
-Text GLabel 6900 2350 2    40   Output ~ 0
+Text GLabel 3200 2550 2    40   Output ~ 0
 Fuel-Pump-Drive
 Text GLabel 9050 2700 0    40   Input ~ 0
 Ignitor4-IN
@@ -308,72 +302,62 @@ Text GLabel 9200 3950 0    40   Input ~ 0
 5vdc-cpu
 Text GLabel 9200 3850 0    40   Input ~ 0
 5vdc-analog
-Text GLabel 6900 750  2    40   Output ~ 0
+Text GLabel 3200 950  2    40   Output ~ 0
 CPU-PT2
-Text GLabel 6900 850  2    40   Output ~ 0
+Text GLabel 3200 1050 2    40   Output ~ 0
 CPU-PT3
-Text HLabel 6900 1250 0    40   Input ~ 0
+Text HLabel 3200 1450 0    40   Input ~ 0
 PT7
-Text HLabel 6900 1150 0    40   Input ~ 0
+Text HLabel 3200 1350 0    40   Input ~ 0
 PT6
 Text GLabel 10650 5050 2    40   Output ~ 0
 AAP
-Text GLabel 5200 2200 0    40   Input ~ 0
+Text GLabel 1500 2400 0    40   Input ~ 0
 AAP
 Text GLabel 9050 2300 0    40   Input ~ 0
 5vdc-analog
 Text GLabel 5450 3200 0    40   Input ~ 0
 Ground
-Text GLabel 5200 2400 0    40   Input ~ 0
+Text GLabel 1500 2600 0    40   Input ~ 0
 Ground
 Text GLabel 10600 1550 2    40   Input ~ 0
 Ground
 Text Notes 4950 2950 0    40   ~ 0
 12v-Constant
-Text Notes 650  2600 0    60   ~ 0
-5vdc-cpu = VDD\n\n5vdc-analog = VCC\n\nINJ-GND and INJ-GND2 are isolated to only be used by the Injector FETs
-Text Notes 650  2200 0    60   ~ 0
-Make sure that the PCB grounds do not touch the inside of the case and \nisolate the TO-220 voltage regulators from the end panels of the case\nwith mica insulators and use plastic screws.
-Text GLabel 6900 1250 2    40   Output ~ 0
+Text GLabel 3200 1450 2    40   Output ~ 0
 CPU-PT7
-Text GLabel 6900 1150 2    40   Output ~ 0
+Text GLabel 3200 1350 2    40   Output ~ 0
 CPU-PT6
-Text GLabel 6900 1050 2    40   Output ~ 0
+Text GLabel 3200 1250 2    40   Output ~ 0
 CPU-PT5
-Text GLabel 6900 950  2    40   Output ~ 0
+Text GLabel 3200 1150 2    40   Output ~ 0
 CPU-PT4
 Text GLabel 9050 1000 0    40   Input ~ 0
 Injector2/4-IN
 Text GLabel 9050 900  0    40   Input ~ 0
 Injector1/3-IN
 $Sheet
-S 5200 700  1700 1800
+S 1500 900  1700 1800
 U 4F0A2F06
 F0 "CPU" 40
 F1 "cpu.sch" 40
-F2 "MAT-Signal" I L 5200 2100 40 
-F3 "BRV-Signal" I L 5200 1800 40 
-F4 "MAP-Signal" I L 5200 1700 40 
-F5 "O2-Signal" I L 5200 2000 40 
-F6 "TPS-Signal" I L 5200 1900 40 
-F7 "Coolant-Signal" I L 5200 1600 40 
-F8 "IAT-Signal" I L 5200 1500 40 
-F9 "AAP-Signal" I L 5200 2200 40 
-F10 "5vdc-analog" I L 5200 850 40 
-F11 "5vdc-cpu" I L 5200 750 40 
-F12 "PT4" O R 6900 950 40 
-F13 "PT3" O R 6900 850 40 
-F14 "PT2" O R 6900 750 40 
-F15 "PT5" O R 6900 1050 40 
-F16 "PCB-GND" I L 5200 2400 40 
-F17 "RPM0" I L 5200 1250 40 
+F2 "SPR-Signal" I L 1500 2300 40 
+F3 "BRV-Signal" I L 1500 2000 40 
+F4 "MAP-Signal" I L 1500 1900 40 
+F5 "O2-Signal" I L 1500 2200 40 
+F6 "TPS-Signal" I L 1500 2100 40 
+F7 "Coolant-Signal" I L 1500 1800 40 
+F8 "IAT-Signal" I L 1500 1700 40 
+F9 "AAP-Signal" I L 1500 2400 40 
+F10 "5vdc-analog" I L 1500 1050 40 
+F11 "5vdc-cpu" I L 1500 950 40 
+F12 "PT4" O R 3200 1150 40 
+F13 "PT3" O R 3200 1050 40 
+F14 "PT2" O R 3200 950 40 
+F15 "PT5" O R 3200 1250 40 
+F16 "PCB-GND" I L 1500 2600 40 
+F17 "RPM0" I L 1500 1450 40 
 $EndSheet
-Text Notes 650  1200 0    60   ~ 0
-J2 is the TE Connectivity Automotive Grade water resistant connector. \nThe 35 positions will allow for modifications to the board for additional \ninputs/outputs as this design only uses 27 positions.  My samples to\ntest have arrived, http://www.te.com Part #'s:\n\n1-776163-2 Right Angle 35 Position Header (Natural Color)\nOR\n1-776231-2 Vertical 35 Position Header (Natural Color)\n1-776231-2 Vertical 35 Position Header (Natural Color)\n776164-2 35 Position AMP SEAL Plug Assembly (Natural Color)
-Text Notes 650  900  0    60   ~ 0
-Jumpers labeled JP5 and JP6 are crossover wires,nothing \nmore.  This was done to ease single sided PCB Prototype testing.
-Text Notes 600  700  0    70   ~ 14
-Notes:
 $Sheet
 S 9300 4850 1350 1900
 U 4F0BB08D
@@ -389,8 +373,8 @@ F8 "IAT-CPU-Signal" O R 10650 5250 40
 F9 "IAT-Sensor" I L 9300 5150 40 
 F10 "TPS-CPU-Signal" O R 10650 5350 40 
 F11 "TPS-Sensor" I L 9300 5550 40 
-F12 "MAT-Sensor" I L 9300 5250 40 
-F13 "MAT-CPU-Signal" O R 10650 5650 40 
+F12 "SPR-Sensor" I L 9300 5250 40 
+F13 "SPR-CPU-Signal" O R 10650 5650 40 
 F14 "BRV" O R 10650 4900 40 
 F15 "MAP-CPU-Signal" O R 10650 5150 40 
 F16 "BRV-12v" I L 9300 4900 40 
@@ -403,9 +387,9 @@ F22 "AAP-CPU-Signal" O R 10650 5050 40
 $EndSheet
 Text GLabel 9300 5000 0    40   Input ~ 0
 5vdc-analog
-Text GLabel 5200 850  0    40   Input ~ 0
+Text GLabel 1500 1050 0    40   Input ~ 0
 5vdc-analog
-Text GLabel 5200 1800 0    40   Input ~ 0
+Text GLabel 1500 2000 0    40   Input ~ 0
 BRV
 Text GLabel 9050 2800 0    40   Input ~ 0
 Fuel-Pump-Drive
@@ -446,23 +430,23 @@ F5 "PWR-GND" I L 5450 3200 40
 $EndSheet
 Text GLabel 10650 6550 2    40   Output ~ 0
 RPM0
-Text GLabel 5200 2000 0    40   Input ~ 0
+Text GLabel 1500 2200 0    40   Input ~ 0
 O2
 Text GLabel 10650 5550 2    40   Output ~ 0
 O2
-Text GLabel 5200 1900 0    40   Input ~ 0
+Text GLabel 1500 2100 0    40   Input ~ 0
 TPS
 Text GLabel 10650 5350 2    40   Output ~ 0
 TPS
-Text GLabel 5200 1600 0    40   Input ~ 0
+Text GLabel 1500 1800 0    40   Input ~ 0
 COOLANT
 Text GLabel 10650 5450 2    40   Output ~ 0
 COOLANT
-Text GLabel 5200 2100 0    40   Input ~ 0
-MAT
+Text GLabel 1500 2300 0    40   Input ~ 0
+SPR
 Text GLabel 10650 5650 2    40   Output ~ 0
-MAT
-Text GLabel 5200 1500 0    40   Input ~ 0
+SPR
+Text GLabel 1500 1700 0    40   Input ~ 0
 IAT
 Text GLabel 10650 5250 2    40   Output ~ 0
 IAT
@@ -470,11 +454,11 @@ Text GLabel 10650 5150 2    40   Output ~ 0
 MAP
 Text GLabel 10650 4900 2    40   Output ~ 0
 BRV
-Text GLabel 5200 1250 0    40   Input ~ 0
+Text GLabel 1500 1450 0    40   Input ~ 0
 RPM0
-Text GLabel 5200 1700 0    40   Input ~ 0
+Text GLabel 1500 1900 0    40   Input ~ 0
 MAP
-Text GLabel 5200 750  0    40   Input ~ 0
+Text GLabel 1500 950  0    40   Input ~ 0
 5vdc-cpu
 Text GLabel 6500 3000 2    40   Output ~ 0
 5vdc-cpu

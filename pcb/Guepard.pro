@@ -1,5 +1,5 @@
-update=23/05/2013 14:48:00
-last_client=cvpcb
+update=24/05/2013 11:15:59
+last_client=eeschema
 [general]
 version=1
 [pcbnew]
@@ -40,6 +40,11 @@ LibName17=w_smd_trans
 LibName18=texas-msp
 LibName19=w_conn_d-sub
 LibDir=D:/kicad/converted;D:/FreeEMS/Guepard-dev/pcb-modules
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
 LibDir=../pcb-modules;D:/kicad/converted
@@ -79,8 +84,3 @@ LibName4=transistors
 LibName5=polyswitch_smd
 LibName6=device
 LibName7=Guepard
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms

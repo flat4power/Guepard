@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 23/05/2013 15:10:10
+EESchema Schematic File Version 2  date 24/05/2013 14:40:27
 LIBS:opto
 LIBS:power
 LIBS:conn
@@ -13,7 +13,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 7 8
 Title "Guepard PCB for FreeEMS"
-Date "23 may 2013"
+Date "24 may 2013"
 Rev "0.1-alpha"
 Comp "git hash: 3495ad36ad"
 Comment1 ""
@@ -74,19 +74,19 @@ PCB-GND
 Text HLabel 4900 4600 0    40   Input ~ 0
 PCB-GND
 $Comp
-L GND #PWR051
+L GND #PWR51
 U 1 1 4F2F3EC7
 P 4900 4600
-F 0 "#PWR051" H 4900 4600 30  0001 C CNN
+F 0 "#PWR51" H 4900 4600 30  0001 C CNN
 F 1 "GND" H 4900 4530 30  0001 C CNN
 	1    4900 4600
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR052
+L GND #PWR52
 U 1 1 4F2F3EC3
 P 4900 5500
-F 0 "#PWR052" H 4900 5500 30  0001 C CNN
+F 0 "#PWR52" H 4900 5500 30  0001 C CNN
 F 1 "GND" H 4900 5430 30  0001 C CNN
 	1    4900 5500
 	1    0    0    -1  

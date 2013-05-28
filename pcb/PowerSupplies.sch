@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 23/05/2013 15:10:10
+EESchema Schematic File Version 2  date 24/05/2013 14:40:27
 LIBS:opto
 LIBS:power
 LIBS:conn
@@ -13,7 +13,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 8 8
 Title "Guepard PCB for FreeEMS"
-Date "23 may 2013"
+Date "24 may 2013"
 Rev "0.1-alpha"
 Comp ""
 Comment1 ""
@@ -191,10 +191,10 @@ $EndComp
 Text HLabel 2700 2450 0    40   Input ~ 0
 PA5
 $Comp
-L GND #PWR053
+L GND #PWR53
 U 1 1 51767419
 P 2700 2700
-F 0 "#PWR053" H 2700 2700 30  0001 C CNN
+F 0 "#PWR53" H 2700 2700 30  0001 C CNN
 F 1 "GND" H 2700 2630 30  0001 C CNN
 	1    2700 2700
 	1    0    0    -1  
@@ -302,19 +302,19 @@ C12, C13 and C16 are 35v Tantalum capacitors.\nC18 and C19 are 10v Tantalum capa
 Text HLabel 1750 2850 0    40   Input ~ 0
 12v-constant
 $Comp
-L GND #PWR054
+L GND #PWR54
 U 1 1 4F1C2CDE
 P 4550 3850
-F 0 "#PWR054" H 4550 3850 30  0001 C CNN
+F 0 "#PWR54" H 4550 3850 30  0001 C CNN
 F 1 "GND" H 4550 3780 30  0001 C CNN
 	1    4550 3850
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR055
+L GND #PWR55
 U 1 1 4F1C2CC1
 P 5850 2750
-F 0 "#PWR055" H 5850 2750 30  0001 C CNN
+F 0 "#PWR55" H 5850 2750 30  0001 C CNN
 F 1 "GND" H 5850 2680 30  0001 C CNN
 	1    5850 2750
 	1    0    0    -1  

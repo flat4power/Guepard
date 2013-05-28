@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 23/05/2013 15:10:10
+EESchema Schematic File Version 2  date 24/05/2013 14:40:27
 LIBS:opto
 LIBS:power
 LIBS:conn
@@ -13,7 +13,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 4 8
 Title "Guepard PCB for FreeEMS"
-Date "23 may 2013"
+Date "24 may 2013"
 Rev "0.1-alpha"
 Comp ""
 Comment1 ""
@@ -174,10 +174,10 @@ GND
 Text Notes 5250 2350 0    40   ~ 0
 Jumpers JP3 and JP4 are crossover wires to allow routing on the PCB.\nIf you redesign the board remove these before trying to place the \ncomponents on the PCB as you my not need them.
 $Comp
-L GND #PWR021
+L GND #PWR21
 U 1 1 4F1C30B1
 P 8600 3200
-F 0 "#PWR021" H 8600 3200 30  0001 C CNN
+F 0 "#PWR21" H 8600 3200 30  0001 C CNN
 F 1 "GND" H 8600 3130 30  0001 C CNN
 	1    8600 3200
 	1    0    0    -1  
