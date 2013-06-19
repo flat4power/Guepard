@@ -1,0 +1,37 @@
+PCBNEW-LibModule-V1  28/05/2013 15:20:29
+# encoding utf-8
+Units mm
+$INDEX
+AB26TRB
+$EndINDEX
+$MODULE AB26TRB
+Po 0 0 0 15 51A4AF11 00000000 ~~
+Li AB26TRB
+Sc 0
+AR 
+Op 0 0 0
+T0 -2.54 -3.81 1.5 1.5 0 0.15 N V 21 N "AB26TRB"
+T1 -3.81 3.81 1.5 1.5 0 0.15 N V 21 N "VAL**"
+$PAD
+Sh "" R 6 2.5 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po -4.75 0
+$EndPAD
+$PAD
+Sh "1" R 2.5 1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.27 -1.27
+$EndPAD
+$PAD
+Sh "2" R 2.5 1 0 0 0
+Dr 0 0 0
+At SMD N 00888000
+Ne 0 ""
+Po 1.27 1.27
+$EndPAD
+$EndMODULE AB26TRB
+$EndLIBRARY
