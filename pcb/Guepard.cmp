@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 19/06/2013 13:36:40
+Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 27/06/2013 10:49:26
 
 BeginCmp
 TimeStamp = /4F0A2F06/4F1DD1E9;
@@ -739,7 +739,7 @@ BeginCmp
 TimeStamp = /4F0A2F06/51765C83;
 Reference = P9;
 ValeurCmp = BATT1;
-IdModule  = keystone_103;
+IdModule  = PIN_ARRAY_2;
 EndCmp
 
 BeginCmp
@@ -1354,7 +1354,7 @@ EndCmp
 BeginCmp
 TimeStamp = /4F0A2F06/51765BD8;
 Reference = U5;
-ValeurCmp = M41T56M6;
+ValeurCmp = DS1307ZN+;
 IdModule  = so-8;
 EndCmp
 
@@ -1369,7 +1369,7 @@ BeginCmp
 TimeStamp = /51A60BA0/51A666F1;
 Reference = U7;
 ValeurCmp = MCP2551;
-IdModule  = msoic-8;
+IdModule  = dil_8-300;
 EndCmp
 
 BeginCmp

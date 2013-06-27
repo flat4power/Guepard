@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 19/06/2013 13:18:45
+EESchema Schematic File Version 2  date 27/06/2013 10:26:26
 LIBS:Guepard
 LIBS:Guepard-Communication
 LIBS:opto
@@ -15,7 +15,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 8
 Title "Guepard PCB for FreeEMS"
-Date "19 jun 2013"
+Date "27 jun 2013"
 Rev "0.1-alpha"
 Comp ""
 Comment1 ""
@@ -1033,7 +1033,7 @@ Wire Notes Line
 Wire Notes Line
 	8500 4550 11050 4550
 Wire Notes Line
-	8500 3300 11050 3300
+	11050 3300 8500 3300
 Wire Wire Line
 	10350 4250 9100 4250
 Connection ~ 10050 3850
@@ -1066,7 +1066,7 @@ Wire Notes Line
 Wire Notes Line
 	2150 1250 800  1250
 Wire Notes Line
-	1350 2250 1050 2250
+	1050 2250 1350 2250
 Wire Notes Line
 	2150 1550 2150 1250
 Wire Notes Line
@@ -1076,7 +1076,7 @@ Wire Notes Line
 Wire Notes Line
 	1350 1700 1450 1700
 Wire Notes Line
-	1350 1700 1350 2250
+	1350 2250 1350 1700
 Wire Wire Line
 	3350 2150 4350 2150
 Wire Wire Line
@@ -1106,7 +1106,7 @@ Wire Notes Line
 Wire Notes Line
 	8350 2800 8350 4250
 Wire Notes Line
-	8350 2800 6000 2800
+	6000 2800 8350 2800
 Wire Notes Line
 	8500 6150 8500 4650
 Wire Notes Line
@@ -1114,7 +1114,7 @@ Wire Notes Line
 Wire Notes Line
 	11050 4650 11050 6150
 Wire Notes Line
-	11050 4650 8500 4650
+	8500 4650 11050 4650
 Wire Notes Line
 	11050 1850 8500 1850
 Wire Notes Line
@@ -1256,7 +1256,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 1650 10350 1550
 Wire Notes Line
-	8500 600  8500 1850
+	8500 1850 8500 600 
 Connection ~ 10350 5250
 Wire Wire Line
 	10350 5650 10350 5800
@@ -1272,9 +1272,9 @@ Wire Notes Line
 Wire Notes Line
 	8350 4550 6000 4550
 Wire Notes Line
-	8350 4550 8350 6100
+	8350 6100 8350 4550
 Wire Notes Line
-	8350 2500 6000 2500
+	6000 2500 8350 2500
 Wire Notes Line
 	8350 2500 8350 1250
 Wire Wire Line
@@ -1303,7 +1303,7 @@ Wire Notes Line
 Wire Notes Line
 	550  600  550  4400
 Wire Notes Line
-	550  600  5000 600 
+	5000 600  550  600 
 Wire Wire Line
 	1600 1900 1600 2250
 Wire Wire Line
@@ -1322,7 +1322,7 @@ Wire Notes Line
 Wire Notes Line
 	5950 6150 8400 6150
 Wire Notes Line
-	5950 6150 5950 600 
+	5950 600  5950 6150
 Wire Notes Line
 	1850 6300 5900 6300
 Wire Wire Line
@@ -1340,18 +1340,18 @@ Connection ~ 3550 5400
 Connection ~ 3550 5800
 Connection ~ 4050 5000
 Wire Wire Line
-	5250 5400 3150 5400
+	3150 5400 5250 5400
 Wire Wire Line
-	5250 5450 5250 5400
+	5250 5400 5250 5450
 Connection ~ 4800 5000
 Connection ~ 4800 5400
 Connection ~ 4800 5800
 Wire Notes Line
-	550  6150 5900 6150
+	5900 6150 550  6150
 Wire Notes Line
-	550  4750 550  6150
+	550  6150 550  4750
 Wire Notes Line
-	1900 4750 550  4750
+	550  4750 1900 4750
 Wire Wire Line
 	4050 5000 4900 5000
 Connection ~ 2750 5100

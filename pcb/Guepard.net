@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source D:/FreeEMS/Guepard-dev/pcb/Guepard.sch)
-    (date "19/06/2013 13:36:56")
+    (date "27/06/2013 10:27:43")
     (tool "eeschema (2013-05-16 BZR 4016)-stable"))
   (components
     (comp (ref J5)
@@ -684,7 +684,7 @@
       (sheetpath (names /CPU/) (tstamps /4F0A2F06/))
       (tstamp 51765C34))
     (comp (ref U5)
-      (value M41T56M6)
+      (value DS1307ZN+)
       (libsource (lib Guepard-Communication) (part M41T56M6))
       (sheetpath (names /CPU/) (tstamps /4F0A2F06/))
       (tstamp 51765BD8))
@@ -1580,21 +1580,6 @@
         (pin (num 4) (name NC) (type passive))
         (pin (num 5) (name NC) (type input))
         (pin (num 6) (name NC) (type input))))
-    (libpart (lib Guepard-cache) (part TC442xA)
-      (fields
-        (field (name Reference) U?)
-        (field (name Value) TC442xA)
-        (field (name Footprint) ~)
-        (field (name Datasheet) ~))
-      (pins
-        (pin (num 1) (name NC) (type input))
-        (pin (num 2) (name IN-A) (type BiDi))
-        (pin (num 3) (name GND) (type BiDi))
-        (pin (num 4) (name IN-B) (type BiDi))
-        (pin (num 5) (name OUT-B) (type BiDi))
-        (pin (num 6) (name Vdd) (type BiDi))
-        (pin (num 7) (name OUT-A) (type BiDi))
-        (pin (num 8) (name NC) (type input))))
     (libpart (lib Guepard-cache) (part MPXA6115AC6U)
       (fields
         (field (name Reference) U)
@@ -1609,7 +1594,22 @@
         (pin (num 5) (name NC) (type input))
         (pin (num 6) (name NC) (type input))
         (pin (num 7) (name NC) (type power_in))
-        (pin (num 8) (name NC) (type power_in)))))
+        (pin (num 8) (name NC) (type power_in))))
+    (libpart (lib Guepard-cache) (part TC442xA)
+      (fields
+        (field (name Reference) U?)
+        (field (name Value) TC442xA)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name NC) (type input))
+        (pin (num 2) (name IN-A) (type BiDi))
+        (pin (num 3) (name GND) (type BiDi))
+        (pin (num 4) (name IN-B) (type BiDi))
+        (pin (num 5) (name OUT-B) (type BiDi))
+        (pin (num 6) (name Vdd) (type BiDi))
+        (pin (num 7) (name OUT-A) (type BiDi))
+        (pin (num 8) (name NC) (type input)))))
   (libraries
     (library (logical Guepard)
       (uri ..\librairie\Guepard.lib))

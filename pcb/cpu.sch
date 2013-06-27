@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 19/06/2013 13:36:51
+EESchema Schematic File Version 2  date 27/06/2013 10:27:40
 LIBS:Guepard
 LIBS:Guepard-Communication
 LIBS:opto
@@ -15,7 +15,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 8
 Title "Guepars PCB for FreeEMS"
-Date "19 jun 2013"
+Date "27 jun 2013"
 Rev "0.1-alpha"
 Comp ""
 Comment1 ""
@@ -473,7 +473,7 @@ L M41T56M6 U5
 U 1 1 51765BD8
 P 9750 1600
 F 0 "U5" H 9450 1900 60  0000 C CNN
-F 1 "M41T56M6" H 9500 1300 60  0000 C CNN
+F 1 "DS1307ZN+" H 9500 1300 60  0000 C CNN
 F 2 "" H 9750 1600 60  0001 C CNN
 F 3 "" H 9750 1600 60  0001 C CNN
 	1    9750 1600

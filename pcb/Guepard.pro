@@ -1,5 +1,5 @@
-update=19/06/2013 13:36:06
-last_client=cvpcb
+update=27/06/2013 11:20:36
+last_client=eeschema
 [general]
 version=1
 [pcbnew]
@@ -47,7 +47,13 @@ LibName22=w_indicators
 LibName23=w_misc_rf
 LibName24=w_capacitors
 LibName25=w_conn_mpt
+LibName26=w_pth_circuits
 LibDir=D:/kicad/converted;../librairie
+[cvpcb]
+version=1
+NetIExt=net
+[cvpcb/libraries]
+EquName1=devcms
 [eeschema]
 version=1
 LibDir=D:/kicad/converted;../librairie
@@ -66,8 +72,3 @@ LibName6=transistors
 LibName7=polyswitch_smd
 LibName8=device
 LibName9=texas-msp
-[cvpcb]
-version=1
-NetIExt=net
-[cvpcb/libraries]
-EquName1=devcms
