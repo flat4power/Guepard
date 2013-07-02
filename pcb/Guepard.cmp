@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 27/06/2013 10:49:26
+Cmp-Mod V01 Created by CvPcb (2013-05-16 BZR 4016)-stable date = 02/07/2013 11:10:04
 
 BeginCmp
 TimeStamp = /4F0A2F06/4F1DD1E9;
@@ -750,13 +750,6 @@ IdModule  = PIN_ARRAY_3X2;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A60BA0/51A36B11;
-Reference = Q1;
-ValeurCmp = MOS_N;
-IdModule  = sot23;
-EndCmp
-
-BeginCmp
 TimeStamp = /4F0D0381/4F0D0557;
 Reference = Q3;
 ValeurCmp = VND14NV04;
@@ -918,20 +911,6 @@ IdModule  = rc03_vert;
 EndCmp
 
 BeginCmp
-TimeStamp = /51A60BA0/51A32E01;
-Reference = R20;
-ValeurCmp = 10k;
-IdModule  = rc03_vert;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A60BA0/51A32E65;
-Reference = R21;
-ValeurCmp = 10k;
-IdModule  = rc03_vert;
-EndCmp
-
-BeginCmp
 TimeStamp = /4F0BB08D/4F187E82;
 Reference = R22;
 ValeurCmp = 1k;
@@ -1019,13 +998,6 @@ BeginCmp
 TimeStamp = /4F0BB08D/4F0B9357;
 Reference = R34;
 ValeurCmp = 470;
-IdModule  = rc03_vert;
-EndCmp
-
-BeginCmp
-TimeStamp = /51A60BA0/51A32DFB;
-Reference = R35;
-ValeurCmp = 10k;
 IdModule  = rc03_vert;
 EndCmp
 
@@ -1418,7 +1390,14 @@ BeginCmp
 TimeStamp = /51A60BA0/51A324B0;
 Reference = U18;
 ValeurCmp = ADUMX201;
-IdModule  = msoic-8;
+IdModule  = so-8;
+EndCmp
+
+BeginCmp
+TimeStamp = /51A60BA0/51D2A2BF;
+Reference = U19;
+ValeurCmp = ADUMX201;
+IdModule  = so-8;
 EndCmp
 
 BeginCmp

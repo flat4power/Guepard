@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 27/06/2013 10:27:40
+EESchema Schematic File Version 2  date 02/07/2013 11:22:17
 LIBS:Guepard
 LIBS:Guepard-Communication
 LIBS:opto
@@ -15,7 +15,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 8
 Title ""
-Date "27 jun 2013"
+Date "2 jul 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -23,9 +23,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Connection ~ 7450 4050
-Wire Wire Line
-	7450 4050 7000 4050
 Wire Wire Line
 	4100 5050 4100 5200
 Wire Wire Line
@@ -77,21 +74,6 @@ Wire Wire Line
 Connection ~ 7750 6700
 Wire Wire Line
 	6500 5950 6500 6700
-Wire Wire Line
-	7850 4850 7450 4850
-Wire Wire Line
-	7450 4850 7450 5050
-Wire Wire Line
-	7450 5050 7250 5050
-Wire Wire Line
-	6550 4150 6550 3950
-Wire Wire Line
-	6300 4750 6800 4750
-Connection ~ 7450 4750
-Wire Wire Line
-	7450 4650 7450 4750
-Wire Wire Line
-	7200 4750 7850 4750
 Connection ~ 10200 6700
 Wire Wire Line
 	10600 5700 10600 5800
@@ -190,15 +172,6 @@ Wire Wire Line
 	10600 6200 10600 6700
 Wire Wire Line
 	10200 6850 10200 6200
-Wire Wire Line
-	7450 4150 7450 4000
-Wire Wire Line
-	7000 4050 7000 4450
-Wire Wire Line
-	6550 4750 6550 4650
-Connection ~ 6550 4750
-Wire Wire Line
-	6300 5050 6750 5050
 Wire Wire Line
 	9900 4750 9550 4750
 Wire Wire Line
@@ -416,47 +389,14 @@ F 3 "" H 6500 5700 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R21
-U 1 1 51A32E65
-P 7000 5050
-F 0 "R21" V 7080 5050 50  0000 C CNN
-F 1 "10k" V 7000 5050 50  0000 C CNN
-F 2 "" H 7000 5050 60  0001 C CNN
-F 3 "" H 7000 5050 60  0001 C CNN
-	1    7000 5050
-	0    -1   -1   0   
-$EndComp
-$Comp
 L +3.3V #PWR046
 U 1 1 51A32E14
-P 7450 4000
-F 0 "#PWR046" H 7450 3960 30  0001 C CNN
-F 1 "+3.3V" H 7450 4110 30  0000 C CNN
-F 2 "" H 7450 4000 60  0001 C CNN
-F 3 "" H 7450 4000 60  0001 C CNN
-	1    7450 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R20
-U 1 1 51A32E01
-P 6550 4400
-F 0 "R20" V 6630 4400 50  0000 C CNN
-F 1 "10k" V 6550 4400 50  0000 C CNN
-F 2 "" H 6550 4400 60  0001 C CNN
-F 3 "" H 6550 4400 60  0001 C CNN
-	1    6550 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L R R35
-U 1 1 51A32DFB
-P 7450 4400
-F 0 "R35" V 7530 4400 50  0000 C CNN
-F 1 "10k" V 7450 4400 50  0000 C CNN
-F 2 "" H 7450 4400 60  0001 C CNN
-F 3 "" H 7450 4400 60  0001 C CNN
-	1    7450 4400
+P 7650 4550
+F 0 "#PWR046" H 7650 4510 30  0001 C CNN
+F 1 "+3.3V" H 7650 4660 30  0000 C CNN
+F 2 "" H 7650 4550 60  0001 C CNN
+F 3 "" H 7650 4550 60  0001 C CNN
+	1    7650 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -694,17 +634,6 @@ F 3 "" H 7200 2000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 NoConn ~ 4000 1300
-$Comp
-L MOS_N Q1
-U 1 1 51A36B11
-P 7000 4650
-F 0 "Q1" H 7010 4820 60  0000 R CNN
-F 1 "MOS_N" H 7010 4500 60  0000 R CNN
-F 2 "~" H 7000 4650 60  0000 C CNN
-F 3 "~" H 7000 4650 60  0000 C CNN
-	1    7000 4650
-	0    -1   1    0   
-$EndComp
 Text Label 4750 2900 0    60   ~ 0
 USB-GND
 Wire Wire Line
@@ -736,11 +665,11 @@ Wire Notes Line
 	5000 6300 1350 6300
 Wire Notes Line
 	1350 6300 1350 4300
-Text HLabel 6550 3950 0    40   Input ~ 0
+Text HLabel 6350 4550 0    40   Input ~ 0
 5vdc
 Text HLabel 6300 4750 0    40   Input ~ 0
 TX_BT
-Text HLabel 6300 5050 0    40   Input ~ 0
+Text HLabel 6300 4850 0    40   Input ~ 0
 RX_BT
 Text HLabel 5850 5350 2    40   Input ~ 0
 5vdc
@@ -759,12 +688,74 @@ Wire Wire Line
 $Comp
 L +3.3V #PWR049
 U 1 1 51A67F66
-P 7300 5650
-F 0 "#PWR049" H 7300 5610 30  0001 C CNN
-F 1 "+3.3V" H 7300 5760 30  0000 C CNN
-F 2 "" H 7300 5650 60  0000 C CNN
-F 3 "" H 7300 5650 60  0000 C CNN
-	1    7300 5650
+P 7300 5600
+F 0 "#PWR049" H 7300 5560 30  0001 C CNN
+F 1 "+3.3V" H 7300 5710 30  0000 C CNN
+F 2 "" H 7300 5600 60  0000 C CNN
+F 3 "" H 7300 5600 60  0000 C CNN
+	1    7300 5600
 	1    0    0    -1  
 $EndComp
+$Comp
+L ADUMX201 U19
+U 1 1 51D2A2BF
+P 7000 4800
+F 0 "U19" H 6985 5091 60  0000 C CNN
+F 1 "ADUMX201" H 7003 4521 60  0000 C CNN
+F 2 "~" H 7000 4800 60  0000 C CNN
+F 3 "~" H 7000 4800 60  0000 C CNN
+	1    7000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4650 7650 4650
+Wire Wire Line
+	7650 4650 7650 4550
+Wire Wire Line
+	7850 4750 7550 4750
+Wire Wire Line
+	7550 4850 7850 4850
+Wire Wire Line
+	6450 4750 6300 4750
+Wire Wire Line
+	6450 4650 6400 4650
+Wire Wire Line
+	6400 4650 6400 4550
+Wire Wire Line
+	6400 4550 6350 4550
+$Comp
+L GND #PWR050
+U 1 1 51D2A539
+P 7650 5050
+F 0 "#PWR050" H 7650 5050 30  0001 C CNN
+F 1 "GND" H 7650 4980 30  0001 C CNN
+F 2 "" H 7650 5050 60  0000 C CNN
+F 3 "" H 7650 5050 60  0000 C CNN
+	1    7650 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR051
+U 1 1 51D2A548
+P 6350 5050
+F 0 "#PWR051" H 6350 5050 30  0001 C CNN
+F 1 "GND" H 6350 4980 30  0001 C CNN
+F 2 "" H 6350 5050 60  0000 C CNN
+F 3 "" H 6350 5050 60  0000 C CNN
+	1    6350 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 4850 6450 4850
+Wire Wire Line
+	6450 4950 6350 4950
+Wire Wire Line
+	6350 4950 6350 5050
+Wire Wire Line
+	7550 4950 7650 4950
+Wire Wire Line
+	7650 4950 7650 5050
+Wire Wire Line
+	7300 5600 7300 5650
+Connection ~ 7300 5650
 $EndSCHEMATC
