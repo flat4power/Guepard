@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 27/06/2013 10:27:40
+EESchema Schematic File Version 2  date 02/07/2013 11:22:17
 LIBS:Guepard
 LIBS:Guepard-Communication
 LIBS:opto
@@ -15,7 +15,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 8
 Title "Guepars PCB for FreeEMS"
-Date "27 jun 2013"
+Date "2 jul 2013"
 Rev "0.1-alpha"
 Comp ""
 Comment1 ""

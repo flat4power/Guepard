@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 27/06/2013 10:27:40
+EESchema Schematic File Version 2  date 02/07/2013 11:22:17
 LIBS:Guepard
 LIBS:Guepard-Communication
 LIBS:opto
@@ -15,7 +15,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 8 8
 Title "Guepard PCB for FreeEMS"
-Date "27 jun 2013"
+Date "2 jul 2013"
 Rev "0.1-alpha"
 Comp ""
 Comment1 ""
@@ -153,10 +153,10 @@ $EndComp
 Text HLabel 6400 1050 0    40   Input ~ 0
 5vdc
 $Comp
-L GND #PWR050
+L GND #PWR052
 U 1 1 517681E3
 P 6650 2500
-F 0 "#PWR050" H 6650 2500 30  0001 C CNN
+F 0 "#PWR052" H 6650 2500 30  0001 C CNN
 F 1 "GND" H 6650 2430 30  0001 C CNN
 F 2 "" H 6650 2500 60  0001 C CNN
 F 3 "" H 6650 2500 60  0001 C CNN
@@ -178,10 +178,10 @@ Spare-din-1
 Text Label 2800 2450 0    40   ~ 0
 Ground
 $Comp
-L GND #PWR051
+L GND #PWR053
 U 1 1 517680F1
 P 2600 2500
-F 0 "#PWR051" H 2600 2500 30  0001 C CNN
+F 0 "#PWR053" H 2600 2500 30  0001 C CNN
 F 1 "GND" H 2600 2430 30  0001 C CNN
 F 2 "" H 2600 2500 60  0001 C CNN
 F 3 "" H 2600 2500 60  0001 C CNN
